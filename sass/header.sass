@@ -1,0 +1,60 @@
+@import "bourbon"
+@import "vars.sass"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+
+.hidden
+	display: none
+ul
+	margin: 0
+	padding: 0
+	li
+		list-style-type: none
+.black__toolbar
+	background-color: rgba(26,26,26,.91)
+	padding: 15px 0px
+	width: 100%
+	position: absolute
+	z-index: 1000
+.logo
+	font-family: "BebasBold", sans-serif
+	font-size: em(34px)
+	color: #fff
+.header__bg
+	width: 100%
+	height: 676px
+	background-size: cover
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 100%
+		background-color: #040002
+		opacity: .61
+		top: 0
+		left: 0
+.main__mnu
+	margin-top: 13px
+	ul
+		li
+		display: inline-block
+		margin-right: 49px
+	a
+		font-size: em(16px)
+		font-family: "OpenSansRegular",sans-serif
+		color: #fff
+.phone__number
+	font-family: "BebasBold", sans-serif
+	font-size: em(20px)
+	color: #fff
+	line-height: 24px
+	text-align: center
+	p
+		padding: 0
+		margin: 0
