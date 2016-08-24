@@ -6,7 +6,7 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
+	 $('.sect1__item').equalHeights();
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
