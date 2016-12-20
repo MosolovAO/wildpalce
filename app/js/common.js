@@ -7,7 +7,7 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
+ 
 	var owl = $("#owl-demo");
 
   owl.owlCarousel({
