@@ -25,6 +25,22 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+.section_header
+	h2
+		font-family: "BebasRegular", sans-serif
+		font-size: em(38px)
+		text-align: center
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			margin: 0 auto
+			height: 4px
+			width: 108px
+			background-color: #f80995
+			transform: translate(-50%)
 .section_1
 	padding: 30px 0 70px 0
 	background-color: #dbdada
@@ -39,40 +55,29 @@ body textarea:required:valid
 		height: 100%
 		top: 0
 		left: 0
-	>h2
-		font-family: "BebasRegular", sans-serif
-		font-size: em(38px)
+	.sect1__item
+		background-color: #1a1a1a
 		text-align: center
-		position: relative
-		&::after
-			content: ''
-			position: absolute
-			left: 46%
-			bottom: 0
-			height: 4px
-			width: 108px
-			background-color: #f80995
-.sect1__item
-	background-color: #1a1a1a
-	text-align: center
-	margin-top: 30px
-	padding: 35px
-	border: 2px solid #cac5c7
-	&:hover
-		border: 2px solid $main-color
-		transition: all .5s ease
-.sect1__item__content
-	h2
-		font-family: "BebasRegular", sans-serif
-		color: #f80995
-		font-size: em(28px)
-		font-weight: normal
-	p
-		font-family: "BebasRegular", sans-serif
-		color: #fff
-		font-size: em(19px)
-		font-weight: normal
-		line-height: 1.2
+		margin-top: 30px
+		padding: 35px
+		border: 2px solid #cac5c7
+		transition: height 500ms ease-in-out
+		h3
+			font-family: "BebasRegular", sans-serif
+			color: #f80995
+			font-size: em(28px)
+			font-weight: normal
+		p
+			font-family: "BebasRegular", sans-serif
+			color: #fff
+			font-size: em(19px)
+			font-weight: normal
+			line-height: 1.2
+		&:hover
+			border: 2px solid $main-color
+			cursor: pointer
+
+
 .section_2
 	padding: 30px
 	background-color: #1a1a1a
@@ -108,8 +113,57 @@ body textarea:required:valid
 		padding: 3px 48px
 		border: none
 		margin-left: 20px
-//ALWAYS END
+
+.section_3
+	position: relative
+	background-color: #dbdada
+	background-image: url(/img/sect3_bg.jpg)
+	background-size: cover
+	padding-bottom: 30px
+.owl-item
+	background-color: #1a1a1a
+	&:nth-child(even)
+		background-color: red
+.item
+	margin: 15px
+	.sect3_item_wrap
+		padding: 25px 18px
+		h3
+			margin: 0
+			padding: 0
+			font-family: "BebasRegular", sans-serif
+			color: #cc107e
+			text-align: center
+			font-size: em(38px)
+		.sect3_item_img
+			text-align: center
+			margin-top: 15px
+			margin-bottom: 15px
+		.sect3_item_content
+			font-size: em(17px)
+			font-family: "BebasRegular", sans-serif
+			line-height: 20px
+			text-align: center
+			color: #fff
+
+
+.customNavigation
+	text-align: center
+.btn
+	font-size: 34px
+	color: #000
+	margin-right: 20px
+	margin-left: 20px
+	cursor: pointer
+
+
+		//ALWAYS END
+	//ALWAYS END
 @import "media"
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
+@import "app/libs/font-awesome/css/font-awesome"
+@import "app/libs/owlcarousel/owl-carousel/owl.carousel"
+@import "app/libs/owlcarousel/owl-carousel/owl.theme"
+@import "app/libs/owlcarousel/owl-carousel/owl.transitions"
